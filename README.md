@@ -90,8 +90,8 @@ flowchart LR
 1. Clone the repository.
 
    ```bash
-   git clone https://github.com/risingOnIP/next_starter.git
-   cd next_starter/nextjs-dashboard
+   git clone https://github.com/risingOnIP/nextjs-dashboard-course.git
+   cd nextjs-dashboard-course/nextjs-dashboard
    ```
 
 2. Install dependencies from the lockfile.
@@ -141,7 +141,7 @@ pnpm start
 ## Project Structure
 
 ```text
-next_starter/
+nextjs-dashboard-course/
 ├── nextjs-dashboard/
 │   ├── app/
 │   │   ├── dashboard/
