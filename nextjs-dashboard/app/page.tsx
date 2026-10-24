@@ -1,8 +1,8 @@
 import AcmeLogo from '@/app/ui/acme-logo';
 import { ArrowRightIcon } from '@heroicons/react/24/outline';
 import Link from 'next/link';
-import { lusitana } from './ui/font';
-import Image from "next/image"
+import Image from 'next/image';
+import { lusitana } from './ui/fonts';
 
 export default function Page() {
   return (
@@ -12,8 +12,9 @@ export default function Page() {
       </div>
       <div className="mt-4 flex grow flex-col gap-4 md:flex-row">
         <div className="flex flex-col justify-center gap-6 rounded-lg bg-gray-50 px-6 py-10 md:w-2/5 md:px-20">
-          <p className={`text-xl text-gray-800 md:text-3xl md:leading-normal ${lusitana.className} antialiased`}>
-            
+          <p
+            className={`text-xl text-gray-800 md:text-3xl md:leading-normal ${lusitana.className} antialiased`}
+          >
             <strong>Welcome to Acme.</strong> This is the example for the{' '}
             <a href="https://nextjs.org/learn/" className="text-blue-500">
               Next.js Learn Course
@@ -28,24 +29,23 @@ export default function Page() {
           </Link>
         </div>
         <div className="flex items-center justify-center p-6 md:w-3/5 md:px-28 md:py-12">
-          <Image 
-          src="/hero-desktop.png"
-          width={1000}
-          height={760}
-          className="hidden md:block"
-          alt="Screenshots of the dashboard project showing desktop version"
-          
+          {/* width and height set the aspect ratio of the source image, not the rendered size */}
+          {/* hidden on mobile, shown from the md breakpoint up */}
+          <Image
+            src="/hero-desktop.png"
+            width={1000}
+            height={760}
+            className="hidden md:block"
+            alt="Screenshots of the dashboard project showing desktop version"
           />
-          {/* width and height above only are aspect ratios of original image, not width and height of displayed image */}
-          {/* hidden in class name hides for mobile and md:block shows on desktop */}
-
-          <Image 
-          src="/hero-mobile.png"
-          width={560}
-          height={620}
-          className="block md:hidden"
-          alt="Screenshots shown to mobile users"></Image>
-
+          {/* shown on mobile, hidden from the md breakpoint up */}
+          <Image
+            src="/hero-mobile.png"
+            width={560}
+            height={620}
+            className="block md:hidden"
+            alt="Screenshots shown to mobile users"
+          />
         </div>
       </div>
     </main>
