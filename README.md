@@ -33,7 +33,7 @@ The completed chapters produce a landing page with self-hosted fonts and breakpo
 
 ## How It Works
 
-The root layout applies the global font and styles, the landing page links into the dashboard, and the dashboard layout keeps the side navigation in place around each dashboard page.
+The root layout applies the global font and styles to every route, the landing page presents the Acme hero, and the dashboard layout keeps the side navigation in place around each dashboard page.
 
 ```mermaid
 %%{init: {"theme": "neutral"}}%%
@@ -60,7 +60,7 @@ flowchart LR
 
 1. **Load fonts:** `app/ui/fonts.ts` defines `inter` and `lusitana` with `next/font/google`.
 2. **Apply global styles:** `app/layout.tsx` imports `app/ui/global.css` and sets Inter on the `body`.
-3. **Render the landing page:** `app/page.tsx` shows the Acme hero with a Lusitana heading and a link into the app.
+3. **Render the landing page:** `app/page.tsx` shows the Acme hero with a Lusitana heading and a "Log in" link to `/login`, the entry point of the authentication chapter.
 4. **Pick the hero image:** `next/image` serves `public/hero-desktop.png` from the `md` breakpoint up and `public/hero-mobile.png` below it.
 5. **Wrap the dashboard:** `app/dashboard/layout.tsx` renders `SideNav` from `app/ui/dashboard/sidenav.tsx` beside each dashboard page.
 6. **Show the dashboard page:** `app/dashboard/page.tsx` is the placeholder for the overview that later chapters fill in.
@@ -81,9 +81,9 @@ flowchart LR
 
 ### Prerequisites
 
-- Node.js 18.18 or later
-- pnpm 9 or later
-- A PostgreSQL database (only for seeding and the data chapters)
+- Node.js 18.18 or later.
+- pnpm 9 or later.
+- A PostgreSQL database (only for seeding and the data chapters).
 
 ### Installation
 
