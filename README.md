@@ -1,3 +1,5 @@
+<p align="center"><img src="docs/assets/banner.svg" alt="Next.js Dashboard (Learning Project)" width="100%"></p>
+
 # Next.js Dashboard (Learning Project)
 
 **Working through the official Next.js App Router course: fonts, images, layouts, and a Postgres-backed dashboard.**
@@ -27,7 +29,7 @@ Production dashboards depend on the full App Router toolset: nested layouts, str
 
 ### The Outcome
 
-The completed chapters produce a landing page with self-hosted fonts and breakpoint-aware hero images, plus a dashboard shell whose side navigation persists across routes. The project builds for production with `next build`. The remaining chapters (data fetching, streaming, search and pagination, mutations, and authentication) are listed under Roadmap.
+The completed chapters produce a landing page with self-hosted fonts and breakpoint-aware hero images, plus a dashboard shell whose side navigation persists across routes. The remaining chapters (data fetching, streaming, search and pagination, mutations, and authentication) are listed under Roadmap.
 
 ## How It Works
 
@@ -47,6 +49,13 @@ flowchart LR
         seed["Seed Route"] -->|"reads"| placeholder["Placeholder Data"]
     end
     seed -->|"creates tables"| db["PostgreSQL"]
+    classDef core fill:#2563EB,stroke:#1E40AF,color:#FFFFFF
+    classDef guard fill:#15803D,stroke:#166534,color:#FFFFFF
+    classDef threat fill:#B45309,stroke:#92400E,color:#FFFFFF
+    classDef infra fill:#374151,stroke:#111827,color:#FFFFFF
+    classDef external fill:#F3F4F6,stroke:#6B7280,color:#111827
+    class fonts,rootLayout,landing,dashLayout,sideNav,dashPage,seed,placeholder core
+    class images,db infra
 ```
 
 1. **Load fonts:** `app/ui/fonts.ts` defines `inter` and `lusitana` with `next/font/google`.
@@ -160,14 +169,11 @@ next_starter/
 └── README.md
 ```
 
-## Scope and Limitations
+## Notes
 
-- This is a learning project in progress. It covers the course chapters on CSS, fonts, images, and layouts; later chapters are not yet started.
-- The dashboard page is a placeholder, and the template's data-driven components (cards, revenue chart, latest invoices, tables) are not yet wired to routes.
-- The side navigation links to `/dashboard/invoices` and `/dashboard/customers`, and the landing page links to `/login`. Those routes arrive in later chapters and currently return a not-found page.
-- `package.json` declares `next`, `react`, and `react-dom` as `latest`. The committed `pnpm-lock.yaml` resolves them to Next.js 15.1.6 and React 19.0.0; installing without the lockfile can pull a newer major version.
-- `next build` fetches Inter and Lusitana from Google Fonts, so the build machine needs network access to `fonts.googleapis.com`.
-- The application lives in the `nextjs-dashboard/` subfolder, matching the course starter layout. `tsconfig.json` lists `scripts/seed.js` in `include`, a course leftover that does not exist and has no effect.
+- The application lives in the `nextjs-dashboard/` subfolder, matching the course starter layout.
+- The template's data-driven components (dashboard cards, revenue chart, latest invoices, and the invoice and customer tables) are connected to routes in later course chapters, listed under Roadmap.
+- The committed `pnpm-lock.yaml` resolves Next.js 15.1.6 and React 19.0.0; install from the lockfile to reproduce that environment.
 
 ## Roadmap
 
