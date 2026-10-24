@@ -4,13 +4,13 @@
 
 **Working through the official Next.js App Router course: fonts, images, layouts, and a Postgres-backed dashboard.**
 
-![Status](https://img.shields.io/badge/Status-Learning-15803D?style=flat-square&labelColor=111827) ![Next.js](https://img.shields.io/badge/Next.js-App%20Router-2563EB?style=flat-square&labelColor=111827&logo=nextdotjs&logoColor=white) ![TypeScript](https://img.shields.io/badge/TypeScript-5-2563EB?style=flat-square&labelColor=111827&logo=typescript&logoColor=white) ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-Data-2563EB?style=flat-square&labelColor=111827&logo=postgresql&logoColor=white) ![License](https://img.shields.io/badge/License-MIT-6B7280?style=flat-square&labelColor=111827)
+![Status](https://img.shields.io/badge/Status-Archived-15803D?style=flat-square&labelColor=111827) ![Next.js](https://img.shields.io/badge/Next.js-App%20Router-2563EB?style=flat-square&labelColor=111827&logo=nextdotjs&logoColor=white) ![TypeScript](https://img.shields.io/badge/TypeScript-5-2563EB?style=flat-square&labelColor=111827&logo=typescript&logoColor=white) ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-Data-2563EB?style=flat-square&labelColor=111827&logo=postgresql&logoColor=white) ![License](https://img.shields.io/badge/License-MIT-6B7280?style=flat-square&labelColor=111827)
 
 This repository follows the official Next.js Learn "App Router" course, building the Acme invoicing dashboard chapter by chapter. The completed chapters deliver optimized font loading, responsive image delivery, and a persistent dashboard shell with side navigation.
 
 ## Overview
 
-The starter code, placeholder data, and image assets come from Vercel's [Next.js Learn course](https://nextjs.org/learn) (source repository [`vercel/next-learn`](https://github.com/vercel/next-learn)). The template components for invoices, customers, dashboard cards, the revenue chart, skeletons, and the login form are Vercel's work and remain largely as the course provides them. The work in this repository is the course exercises completed so far, applied on top of that starter.
+This project is archived and preserved as a record of the course work. The starter code, placeholder data, and image assets come from Vercel's [Next.js Learn course](https://nextjs.org/learn) (source repository [`vercel/next-learn`](https://github.com/vercel/next-learn)). The template components for invoices, customers, dashboard cards, the revenue chart, skeletons, and the login form are Vercel's work and remain largely as the course provides them. The work in this repository is the course exercises completed so far, applied on top of that starter.
 
 - **Font optimization:** `app/ui/fonts.ts` loads Inter and Lusitana through `next/font/google`, which self-hosts the font files at build time.
 - **Responsive images:** `app/page.tsx` serves a desktop or mobile hero screenshot through `next/image`, chosen by Tailwind breakpoint classes.

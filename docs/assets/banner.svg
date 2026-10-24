@@ -72,7 +72,7 @@
   <text x="72" y="176" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="22" fill="#CBD5E1">Working through the official Next.js App Router course: fonts,</text>
   <text x="72" y="208" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="22" fill="#CBD5E1">images, layouts, and a Postgres-backed dashboard.</text>
   <rect x="72" y="248" width="109" height="32" rx="16" fill="#15803D" fill-opacity="0.18" stroke="#15803D" stroke-width="1.5"/>
-  <text x="126.5" y="269" text-anchor="middle" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" font-weight="700" letter-spacing="1.2" fill="#F9FAFB">LEARNING</text>
+  <text x="126.5" y="269" text-anchor="middle" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" font-weight="700" letter-spacing="1.2" fill="#F9FAFB">ARCHIVED</text>
   <rect x="193" y="248" width="99" height="32" rx="16" fill="#2563EB" fill-opacity="0.18" stroke="#2563EB" stroke-width="1.5"/>
   <text x="242.5" y="269" text-anchor="middle" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" font-weight="700" letter-spacing="1.2" fill="#F9FAFB">NEXT.JS</text>
   <rect x="304" y="248" width="128" height="32" rx="16" fill="#2563EB" fill-opacity="0.18" stroke="#2563EB" stroke-width="1.5"/>
