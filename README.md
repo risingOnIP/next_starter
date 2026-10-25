@@ -29,7 +29,7 @@ Production dashboards depend on the full App Router toolset: nested layouts, str
 
 ### The Outcome
 
-The completed chapters produce a landing page with self-hosted fonts and breakpoint-aware hero images, plus a dashboard shell whose side navigation persists across routes. The remaining chapters (data fetching, streaming, search and pagination, mutations, and authentication) are listed under Roadmap.
+The completed chapters produce a landing page with self-hosted fonts and breakpoint-aware hero images, plus a dashboard shell whose side navigation persists across routes. The remaining course chapters cover data fetching, streaming, search and pagination, mutations, and authentication.
 
 ## How It Works
 
@@ -172,17 +172,8 @@ nextjs-dashboard-course/
 ## Notes
 
 - The application lives in the `nextjs-dashboard/` subfolder, matching the course starter layout.
-- The template's data-driven components (dashboard cards, revenue chart, latest invoices, and the invoice and customer tables) are connected to routes in later course chapters, listed under Roadmap.
+- The template's data-driven components (dashboard cards, revenue chart, latest invoices, and the invoice and customer tables) are connected to routes in later course chapters.
 - The committed `pnpm-lock.yaml` resolves Next.js 15.1.6 and React 19.0.0; install from the lockfile to reproduce that environment.
-
-## Roadmap
-
-- [ ] Add data fetching for the dashboard cards, revenue chart, and latest invoices from PostgreSQL.
-- [ ] Add streaming with React Suspense and the template's loading skeletons.
-- [ ] Add the invoices page with search, pagination, and Server Actions for create, update, and delete.
-- [ ] Add error handling, form validation, and accessibility improvements from the course.
-- [ ] Add authentication with NextAuth.js to protect the dashboard routes.
-- [ ] Pin `next`, `react`, and `react-dom` to explicit versions.
 
 ## Acknowledgments
 
